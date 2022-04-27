@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "nodemonConfig":{
+    "delay":2000,
+    "ignore":[]
+  },
   "scripts": {
+    "watch":"nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,5 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
